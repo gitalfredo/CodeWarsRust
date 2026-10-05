@@ -1,0 +1,10 @@
+[package]
+name = "codewars"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[[bin]]
+name = "codewars"
+path = "main.rs"
