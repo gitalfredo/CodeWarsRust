@@ -1,2 +1,2 @@
-"# CodeWarsRust" 
-CodeWars in Rust katas translated from my Haskell solutions repo
+# CodeWarsRust
+CodeWars katas in Rust
