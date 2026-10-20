@@ -1,1 +1,1 @@
-pub mod k7_methods;
+pub mod k7_exercises;
