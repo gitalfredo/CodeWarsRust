@@ -1,1 +1,1 @@
-pub mod sum_digits;
+pub mod k7_methods;
