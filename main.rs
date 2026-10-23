@@ -1,8 +1,8 @@
 mod kyu7;
 
-use kyu7::k7_exercises::sum_digits;
-use kyu7::k7_exercises::is_triangle;
-use kyu7::k7_exercises::xos;
+use kyu7::k7_sum_digits::sum_digits;
+use kyu7::k7_is_triangle::is_triangle;
+use kyu7::k7_xos::xos;
 
 struct TriangleTuple(i32,i32,i32);
 
@@ -23,6 +23,10 @@ pub fn main() {
     
     // xos (strings of xoxoxxx return true if amount of x,o match)
     let s = "xooxxxoxoooooooxxxxx";  // true
+    let x0 = xos(s);
+    assert_eq!(x0, true, "Failed to check that {s} has the same amount of x and o");
+
+    let s = "xooX";  // true
     let x0 = xos(s);
     assert_eq!(x0, true, "Failed to check that {s} has the same amount of x and o");
 
