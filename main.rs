@@ -35,8 +35,12 @@ pub fn main() {
     assert_eq!(x0, true, "Failed to check that {s} has the same amount of x and o");
 
     // 6 kyu - romans to integer
-    let s = "XIX";  // 19
+    let mut s = "XIX";  // 19
     let table = NumeralValues::new();
-    let conversion = roman_to_integer(s,table);
-    assert_eq!(conversion, 19, "Failed to convert {s} to integers ({conversion})");
+    let conversion = roman_to_integer(s,&table);
+    assert_eq!(conversion, 19, "Failed to convert {s} to integer 19 (actual: {conversion})");
+
+    s = "XCV";  // 95
+    let conversion = roman_to_integer(s,&table);
+    assert_eq!(conversion, 95, "Failed to convert {s} to integer 95 (actual: {conversion})");
 }

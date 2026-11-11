@@ -26,10 +26,10 @@ impl NumeralValues{
  
 
 // Converts roman to integers
-pub fn roman_to_integer(s: &str, vs: NumeralValues) -> u16{
+pub fn roman_to_integer(s: &str, vs: &NumeralValues) -> u16{
     // say XIX is 19
     //let s = "XIX";
-    let mut prev = s.chars().next().unwrap();
+    let mut prev = s.chars().rev().next().unwrap();
     let mut acc = 0;
     acc += vs.get_value(prev).unwrap();
     for elem in s.chars().rev().skip(1){
